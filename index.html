@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서 서비스 웹사이트</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <h1 onclick="location.reload();">도서 서비스 웹사이트</h1>
+    <nav>
+        <ul>
+            <li><a href="#search">검색 서비스</a></li>
+            <li><a href="#bestseller">베스트 셀러 서비스</a></li>
+            <li><a href="#bookrecommendation">도서 추천 서비스</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="wrap">
+    <div class="subt" id="bookSearch">
+      <h3>검색 서비스</h3>
+    </div>
+    <form>
+      <div class="input1">
+        <p class="subtt1">책을 검색하시오</p>
+        <input type="text" id="bookTitleInput" placeholder="Book Title">
+        <br>
+        <div class="butgroup">
+          <input type="button" value="Search" onclick="bookSearch(event)">
+          <button type="reset" value="Reset">Reset</button>
+          <button type="button" onclick="resetSearch()">Clean</button>
+          <p id="search-error" style="color: red; height: 10px;"></p>
+        </div>
+      </div>
+    </form>
+    <div id="searchResults" class="view1"></div>
+  
+    <div class="subt" id="bestseller">
+        <h3>베스트 셀러</h3>
+    </div>
+    <form>
+        <div class="input2">
+            <p class="subtt1">카테고리 설정</p>
+            <label for="main-category_best">메인 카테고리</label>
+            <select id="main-category_best" onchange="changeSubSelect_best()">
+                <option value="">--Choose--</option>
+                <option value="국내도서">국내도서</option>
+                <option value="외국도서">외국도서</option>
+                <option value="음반">음반</option>
+                <option value="DVD">DVD</option>
+            </select>
+    
+            <label for="sub-category_best">분야 카테고리</label>
+            <select id="sub-category_best">
+                <option value="">--Choose--</option>
+            </select>
+            <br>
+            <br>
+            <div class="butgroup">
+                <input type="button" onclick="bestsellerDisplay()" value="Apply">
+                <button type="reset" value="Reset">Reset</button>
+                <button type="button" onclick="resetBestseller()">Clean</button>
+                <p id="bestseller-error" style="color: red; height: 10px;"></p>
+            </div>
+        </div>
+    </form>
+    <div id="bestSellerView" class="view2"></div>
+        
+    <div class="subt" id="bookrecommendation">
+        <h3>도서 추천 서비스</h3>
+    </div>
+    <form>
+        <div class="input3"> 
+            <p class="subtt2">메인 카테고리</p>
+            <select id="main-category_recommend" onchange="changeSubSelect_recommend()">
+                <option value="">--Choose--</option>
+                <option value="국내도서">국내도서</option>
+                <option value="외국도서">외국도서</option>
+                <option value="음반">음반</option>
+                <option value="DVD">DVD</option>
+            </select>
+    
+            <label for="sub-category_recommend">분야 카테고리</label>
+            <select id="sub-category_recommend">
+                <option value="">--Choose--</option>
+            </select>
+            <br>
+            <br>
+            <div class="butgroup">
+                <input type="button" onclick="bookRecommendationDisplay()" value="Apply">
+                <button type="reset" value="Reset">Reset</button>
+                <button type="button" onclick="resetRecommend()">Clean</button>
+                <p id="recommendation-error" style="color: red; height: 10px;"></p>
+            </div>
+        </div>
+    </form>
+    <div id="bookRecommendView" class="view3"></div>
+</div>   
+
+<footer>
+    <p style="color: bisque;">인터넷 프로그래밍 202370084 황찬</p>
+    <p>Hwang Chan - <a href="mailto:chah98h@naver.com">chah98h@naver.com</a></p>
+</footer>
+
+</body>
+</html>
