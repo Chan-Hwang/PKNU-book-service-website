@@ -224,7 +224,7 @@ function bestsellerDisplay() {
     var apiKey = "6F74C302D57225F07B144534D2062F32F515D5B12E9F364F600B61E9BD92868B";
 
     $.ajax({
-        url: 'http://cors-anywhere.herokuapp.com/http://book.interpark.com/api/bestSeller.api',
+        url: 'http://book.interpark.com/api/bestSeller.api',
         data: {
             key: apiKey,
             categoryId: categoryId,
@@ -281,7 +281,7 @@ function bookRecommendationDisplay() {
     var apiKey = "6F74C302D57225F07B144534D2062F32F515D5B12E9F364F600B61E9BD92868B";
 
     $.ajax({
-        url: 'http://cors-anywhere.herokuapp.com/http://book.interpark.com/api/recommend.api',
+        url: 'http://book.interpark.com/api/recommend.api',
         data: {
             key: apiKey,
             categoryId: categoryId,
