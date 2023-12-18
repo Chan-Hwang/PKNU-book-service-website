@@ -58,6 +58,7 @@ h1:hover, nav ul li a:hover  {
     width: 70%;
     height: 400px;
     border: 3px solid;
+    margin: 0px 24px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 20px;
@@ -66,6 +67,8 @@ h1:hover, nav ul li a:hover  {
     position: relative; 
     bottom: 10px;
 }
+
+
 .subtt2 {
     position: relative; 
     bottom: 10px;
@@ -85,8 +88,8 @@ h1:hover, nav ul li a:hover  {
 }
 .input2 input, .input2 button, .input3 input, .input3 button {
     display: inline-block;
-    width: 100px;
-    height: 30px;
+    width: 58.25px;
+    height: 21px;
 }
 #bestSellerView {
     text-align: center;
@@ -160,4 +163,192 @@ footer a {
 .book-description {
     margin-top: 5px;
     color: gray;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    nav ul li {
+        display: inline-block;
+        border: 1px solid ;
+        font-family: Bree Serif;
+        width: 200px;
+    }    
+
+    [class *= input] {
+        width: 86%;
+        height: 150px;
+    }
+
+    [class *= view] {
+        overflow: auto;
+        float: left;
+        width: 86%;
+        height: 425px;
+        border: 3px solid;
+        margin: 16px 50px;
+    }
+
+    .subtt1 {
+        position: relative; 
+        bottom: 0px;
+    }
+
+    .input2 > p, .input3 > p, .input2 > label, .input3 > label, .input > label {
+        font-weight: bolder;
+        text-align: center;
+        position: relative;
+        top: 34px;
+    }
+
+    .input1 label, .input2 label, .input3 label {
+        margin: 0px;
+    }
+
+    .input2 select, .input3 select{
+        text-align: center;
+        width: 80%;
+        height: 30px;
+        margin-top: 10px;
+        position: relative;
+        top: 27px;
+    }
+
+    .butgroup {
+        align-items: normal; 
+        width: 100%; 
+        text-align: center;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .subtt2 {
+        margin: 0px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    nav ul li {
+        display: inline-block;
+        border: 1px solid ;
+        font-family: Bree Serif;
+        width: 200px;
+    }    
+
+    [class *= input] {
+        width: 86%;
+        height: 150px;
+    }
+
+    [class *= view] {
+        overflow: auto;
+        float: left;
+        width: 86%;
+        height: 425px;
+        border: 3px solid;
+        margin: 16px 50px;
+    }
+
+    .subtt1 {
+        position: relative; 
+        bottom: 0px;
+    }
+
+    .input2 > p, .input3 > p, .input2 > label, .input3 > label, .input > label {
+        font-weight: bolder;
+        text-align: center;
+        position: relative;
+        top: 34px;
+    }
+
+    .input1 label, .input2 label, .input3 label {
+        margin: 0px;
+    }
+
+    .input2 select, .input3 select{
+        text-align: center;
+        width: 80%;
+        height: 30px;
+        margin-top: 10px;
+        position: relative;
+        top: 27px;
+    }
+
+    .butgroup {
+        align-items: normal; 
+        width: 100%; 
+        text-align: center;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .subtt2 {
+        margin: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 1099px) {
+
+    nav ul li {
+        display: inline-block;
+        border: 1px solid ;
+        font-family: Bree Serif;
+        width: 200px;
+    }    
+
+    [class *= input] {
+        width: 86%;
+        height: 150px;
+    }
+
+    [class *= view] {
+        overflow: auto;
+        float: left;
+        width: 86%;
+        height: 425px;
+        border: 3px solid;
+        margin: 16px 50px;
+    }
+
+    .subtt1 {
+        position: relative; 
+        bottom: 0px;
+    }
+
+    .input2 > p, .input3 > p, .input2 > label, .input3 > label, .input > label {
+        font-weight: bolder;
+        text-align: center;
+        position: relative;
+        top: 34px;
+    }
+
+    .input1 label, .input2 label, .input3 label {
+        margin: 0px;
+    }
+
+    .input2 select, .input3 select{
+        text-align: center;
+        width: 80%;
+        height: 30px;
+        margin-top: 10px;
+        position: relative;
+        top: 27px;
+    }
+
+    .butgroup {
+        align-items: normal; 
+        width: 100%; 
+        text-align: center;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .subtt2 {
+        margin: 0px;
+    }
+
 }

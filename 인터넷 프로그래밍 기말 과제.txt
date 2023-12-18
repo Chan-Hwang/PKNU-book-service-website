@@ -1,0 +1,19 @@
+프로젝트 소개
+- 책
+
+
+사용 기술
+vanila js (html, css, javascript)
+open api(inter park, kakao)
+
+수행 과정
+처음에 수행했고
+
+api 공부해서 하는거
+cors 오류 해결
+
+수행 내용
+
+수행 결과 및 목표 달성 정도
+
+고찰(아쉬운 점)
